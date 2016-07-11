@@ -12,9 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import ara.action.Action;
 import ara.action.MainAction;
 import ara.vo.ActionForward;
+<<<<<<< HEAD
 import ara.web.notice.action.CommentAction;
 import ara.web.notice.action.NoticeBoardContentAction;
 import ara.web.notice.action.NoticeBoardListAction;
+=======
+
+>>>>>>> branch 'master' of https://github.com/Jinho-Choi/ARA.git
 
 /**
  * Servlet implementation class MainFrontController
