@@ -1,4 +1,4 @@
-package ara.web.notice.controllre;
+package ara.web.notice.controller;
 
 import java.io.IOException;
 
