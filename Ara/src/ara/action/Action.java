@@ -9,9 +9,13 @@ import ara.vo.ActionForward;
 public interface Action {
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public ActionForward execute(HttpServletRequest request,
 =======
 	public ara.vo.ActionForward execute(HttpServletRequest request,
 >>>>>>> refs/remotes/origin/59
+=======
+	public ActionForward execute(HttpServletRequest request,
+>>>>>>> refs/remotes/origin/knight
 			HttpServletResponse response) throws Exception;
 }

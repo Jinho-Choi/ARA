@@ -14,6 +14,7 @@ import ara.action.MainAction;
 import ara.vo.ActionForward;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 import ara.web.notice.action.CommentAction;
@@ -23,6 +24,8 @@ import ara.web.notice.action.NoticeBoardListAction;
 =======
 
 >>>>>>> refs/remotes/origin/kim
+=======
+>>>>>>> refs/remotes/origin/knight
 
 /**
  * Servlet implementation class MainFrontController
