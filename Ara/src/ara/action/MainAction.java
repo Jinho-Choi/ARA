@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import ara.vo.ActionForward;
+<<<<<<< HEAD
 import ara.web.board.svc.NoticeBoardListService;
 import ara.web.board.svc.QnABoardListService;
 import ara.web.board.vo.NoticeBoardVO;
@@ -51,6 +52,36 @@ public class MainAction implements Action {
 		session.setAttribute("qnaArticleList", qnaArticleList);
 		session.setAttribute("errorPCCount", errorPCCount);
 		session.setAttribute("reservationCount", reservationCount);
+=======
+import ara.web.notice.svc.NoticeBoardListService;
+import ara.web.notice.vo.NoticeBoardVO;
+
+public class MainAction implements Action {
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// TODO Auto-generated method stub
+		int pageSize = 10;
+		
+		String pageNum = request.getParameter("pageNum"); 
+		if(pageNum == null) {
+			pageNum = "1"; 
+		}
+
+		int currentPage = Integer.parseInt(pageNum);
+		int startRow = (currentPage - 1) * pageSize + 1;			
+		int count = 0;
+		int number = 0;
+
+		List<NoticeBoardVO> noticeArticleList = null;
+		
+		NoticeBoardListService noticeBoardListService = new NoticeBoardListService();
+		
+		noticeArticleList = noticeBoardListService.getNoticeContentArticleList(); 
+		
+		HttpSession session = request.getSession();
+		session.setAttribute("noticeArticleList", noticeArticleList);
+>>>>>>> branch 'young' of https://github.com/Jinho-Choi/ARA.git
 		session.setAttribute("pageNum", pageNum);
 		
 		ActionForward forward = new ActionForward();

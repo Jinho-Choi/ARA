@@ -1,4 +1,4 @@
-package ara.controller;
+package ara.web.notice.controllre;
 
 import java.io.IOException;
 
@@ -10,32 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ara.action.Action;
-import ara.action.MainAction;
 import ara.vo.ActionForward;
-<<<<<<< HEAD
-
-=======
 import ara.web.notice.action.CommentAction;
 import ara.web.notice.action.NoticeBoardContentAction;
 import ara.web.notice.action.NoticeBoardListAction;
->>>>>>> branch 'young' of https://github.com/Jinho-Choi/ARA.git
+
 
 /**
- * Servlet implementation class MainFrontController
+ * Servlet implementation class BoardFrontController
  */
-@WebServlet("*.do")
-public class MainFrontController extends HttpServlet {
+@WebServlet("*.bo")
+public class BoardFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public MainFrontController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-    
-    protected void doProcess(HttpServletRequest request, HttpServletResponse response)
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public BoardFrontController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String requestURI = request.getRequestURI();
@@ -45,8 +41,25 @@ public class MainFrontController extends HttpServlet {
 		Action action = null; 
 		ActionForward forward = null; 
 
-		if (command.equals("/main.do")) {
-			action = new MainAction();
+	
+		 if (command.equals("/noticeBoardList.bo")) { 
+			action = new NoticeBoardListAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		} else if (command.equals("/noticeBoardContent.bo")) {
+			action = new NoticeBoardContentAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		} else if (command.equals("/qnAComment.bo")) {
+			action = new CommentAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
@@ -66,17 +79,21 @@ public class MainFrontController extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doProcess(request, response);
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 		doProcess(request, response);
