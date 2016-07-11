@@ -13,12 +13,16 @@ import ara.action.Action;
 import ara.action.MainAction;
 import ara.vo.ActionForward;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 import ara.web.notice.action.CommentAction;
 import ara.web.notice.action.NoticeBoardContentAction;
 import ara.web.notice.action.NoticeBoardListAction;
 >>>>>>> branch 'young' of https://github.com/Jinho-Choi/ARA.git
+=======
+
+>>>>>>> refs/remotes/origin/kim
 
 /**
  * Servlet implementation class MainFrontController
