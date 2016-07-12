@@ -34,7 +34,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <script>
-self.moveTo(0,0) self.resizeTo(screen.availWidth,screen.availHeight)
 </script>
 </head>
 <body>

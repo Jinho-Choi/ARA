@@ -1,7 +1,6 @@
 package ara.web.member.dao;
 
 import static ara.db.JdbcUtil.*;
-import static ara.db.JdbcUtil.close;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

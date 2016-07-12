@@ -184,21 +184,21 @@ table{
 					                        <div class="form-group">
 					                            <span class="col-md-1 col-md-offset-2 text-center" ><i class="fa fa-user bigicon"></i></span>
 					                            <div class="col-md-8">
-					                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1; margin-top: 210px; font-family: 맑은고딕"> ${loginUser.m_name }</span> <span style="font-family: 맑은고딕">님 로그인하셨습니다.</span><br>
+					                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1; margin-top: 210px; font-family: 맑은고딕"> ${loginUser.u_name }</span> <span style="font-family: 맑은고딕">님 로그인하셨습니다.</span><br>
 					                            </div>
 					                        </div>
 					
 					                        <div class="form-group">
 					                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
 					                            <div class="col-md-8">
-					                            <span STYLE ="font-size: 20px; font-weight:bold; font-family: 맑은고딕">  ${loginUser.m_email } </span><br>
+					                            <span STYLE ="font-size: 20px; font-weight:bold; font-family: 맑은고딕">  ${loginUser.u_email } </span><br>
 					                            </div>
 					                        </div>
 					
 					                        <div class="form-group">
 					                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
 					                            <div class="col-md-8">
-					                           <span STYLE ="font-size: 20px; font-weight:bold; font-family: 맑은고딕">  ${loginUser.m_phone } </span><br>
+					                           <span STYLE ="font-size: 20px; font-weight:bold; font-family: 맑은고딕">  ${loginUser.u_phone } </span><br>
 					                            </div>
 					                        </div>
 					

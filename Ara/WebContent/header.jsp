@@ -65,7 +65,7 @@
                     <li>
                         <a href="introduceForm.jsp">시스템 소개</a>
                     </li>
-                    <c:if test="${loginUser.m_id eq 'admin' }">
+                    <c:if test="${loginUser.u_id eq 'admin' }">
                     	<li>
                        		<a href = "adminNoticeBoardList.boa">공지관리</a>
                     	</li>
@@ -73,7 +73,7 @@
                         	<a href = "adminQnABoardList.boa">문의관리</a>
                     	</li>
                     </c:if>
-                    <c:if test="${loginUser.m_id ne 'admin' }">
+                    <c:if test="${loginUser.u_id ne 'admin' }">
                     <li>
                         <a href="noticeBoardList.bo">공지사항</a>
                     </li>
@@ -82,17 +82,17 @@
                     </li>
                     </c:if>
                     <li>
-                    <c:if test="${loginUser.m_id eq 'admin' }">
+                    <c:if test="${loginUser.u_id eq 'admin' }">
                         <a href="errorPcList.pca">PC 관리</a>
                     </c:if>
                     </li>
                     <li>
-                    <c:if test="${loginUser.m_id eq 'admin' }">
+                    <c:if test="${loginUser.u_id eq 'admin' }">
                     	<a href = "reservationList.pca">예약정보</a>
                     </c:if>
                     </li>
                     <li>
-                    <c:if test="${loginUser.m_id eq 'admin' }">
+                    <c:if test="${loginUser.u_id eq 'admin' }">
                     	<a href = "memberAdminMain.mema">회원관리</a>
                     </c:if>
                     </li>

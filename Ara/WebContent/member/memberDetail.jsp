@@ -41,32 +41,26 @@ function winMemberModify(){
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-check bigicon"><span STYLE ="font-size: 20px">ID  </span></i></span>
                             <div class="col-md-8">
-                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.m_id }</span> <br>
+                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_id }</span> <br>
                             </div>
                         </div>
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"><span STYLE ="font-size: 14px">이름  </span></i></span>
                             <div class="col-md-8">
-                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.m_name }</span> <br>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span STYLE ="font-size: 15px;" class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-key bigicon"><span STYLE ="font-size: 14px">학번  </span></i></span>
-                            <div class="col-md-8">
-                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.m_studentNum }</span> <br>
+                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_name }</span> <br>
                             </div>
                         </div>
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-print bigicon"><span STYLE ="font-size: 14px">우편번호</span></i></span>
                             <div class="col-md-8">
-                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.m_zipcode1 }-${loginUser.m_zipcode2 }</span> <br>
+                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_zipcode1 }-${loginUser.u_zipcode2 }</span> <br>
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-building bigicon"><span STYLE ="font-size: 14px">주소  </span></i></span>
                             <div class="col-md-8">
-                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.m_address1 }-${loginUser.m_address2 }</span> <br>
+                                 <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_address1 }-${loginUser.u_address2 }</span> <br>
                             </div>
                         </div>
 
@@ -77,22 +71,16 @@ function winMemberModify(){
                             </div>
                         </div>
                         <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-heart bigicon"><span STYLE ="font-size: 14px">성별  </span></i></span>
-                            <div class="col-md-8">
-                            <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.m_gender } </span><br>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"><span STYLE ="font-size: 14px">Email  </span></i></span>
                             <div class="col-md-8">
-                            <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.m_email } </span><br>
+                            <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.u_email } </span><br>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"><span STYLE ="font-size: 14px">전화  </span></i></span>
                             <div class="col-md-8">
-                           <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.m_phone } </span><br>
+                           <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.u_phone } </span><br>
                             </div>
                         </div>
 

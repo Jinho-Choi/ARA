@@ -38,7 +38,7 @@ public class JdbcUtil {
 			Context envCtx = (Context)initCtx.lookup("java:comp/env");
 			// 정의된 Resource에 접근할 수 있는 컨텍스트를 얻어옴(무조건).
 			
-			DataSource ds = (DataSource)envCtx.lookup("jdbc/board"); // 데이터 소스 얻어옴
+			DataSource ds = (DataSource)envCtx.lookup("jdbc/jsptest"); // 데이터 소스 얻어옴
 			// 커넥션은 데이터소스를 통해서 커넥션풀에서 얻어온다.
 			con = ds.getConnection();
 			
