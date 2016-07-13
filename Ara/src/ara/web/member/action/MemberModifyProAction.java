@@ -23,14 +23,17 @@ public class MemberModifyProAction implements Action {
 		String u_id = request.getParameter("id");
 		String u_name = request.getParameter("name");
 		String u_passwd = request.getParameter("passwd");
-		String u_address = request.getParameter("address");
 		String u_email = request.getParameter("email");
 		String u_phone = request.getParameter("phone");
 		String u_gender = request.getParameter("gender");
 		String u_guardian = request.getParameter("guardian");
+		int u_zipcode1 = Integer.parseInt(request.getParameter("zipcode1"));
+		int u_zipcode2 = Integer.parseInt(request.getParameter("zipcode2"));
+		String u_address1 = request.getParameter("address1");
+		String u_address2 = request.getParameter("address2");
 		String u_auth = request.getParameter("auth");
 		
-		Member member = new Member();
+		Member member = new Member(u_id, u_name, u_passwd, u_email, u_phone, u_gender, u_guardian, u_zipcode1, u_zipcode2, u_address1, u_address2, u_auth);
 		
 		MemberModifyProService memberModifyProService = new MemberModifyProService();
 

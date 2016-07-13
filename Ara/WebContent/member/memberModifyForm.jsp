@@ -73,6 +73,10 @@ Member loginUser = (Member)request.getAttribute("loginUser");
                                     <input type = "hidden" name = "name" value = ${loginUser.u_name } />
                                          <input type="text" name="name" id="name" class="form-control input-sm" placeholder="이름" value = ${loginUser.u_name } readonly="readonly">
                                 </div>
+                                <div class="form-group">
+                                    <input type = "hidden" name = "gender" value = ${loginUser.u_gender } />
+                                       <input type="text" name="gender" id="gender" class="form-control input-sm" placeholder="성별" value = ${loginUser.gender } readonly="readonly" />
+                                </div>
                                   <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
                                          <input type="text" name="zipcode1" id="zipcode1" readonly="readonly" class="form-control input-sm" value = ${loginUser.u_zipcode1 } >

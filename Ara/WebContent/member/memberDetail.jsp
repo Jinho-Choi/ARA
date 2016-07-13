@@ -50,6 +50,7 @@ function winMemberModify(){
                                  <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_name }</span> <br>
                             </div>
                         </div>
+                        
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-print bigicon"><span STYLE ="font-size: 14px">우편번호</span></i></span>
                             <div class="col-md-8">
@@ -61,13 +62,6 @@ function winMemberModify(){
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-building bigicon"><span STYLE ="font-size: 14px">주소  </span></i></span>
                             <div class="col-md-8">
                                  <span STYLE ="font-size: 20px; font-weight:bold; font-color: #4169E1;"> ${loginUser.u_address1 }-${loginUser.u_address2 }</span> <br>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-birthday-cake bigicon"><span STYLE ="font-size: 14px">생년월일  </span></i></span>
-                            <div class="col-md-8">
-                            <span STYLE ="font-size: 20px; font-weight:bold;">  ${loginUser.m_birthDay } </span><br>
                             </div>
                         </div>
                         <div class="form-group">

@@ -202,7 +202,10 @@ public class MemberDAO {
 
 	public int updateMember(Member member) {
 		// TODO Auto-generated method stub
-		String sql = "UPDATE member SET u_name = ?, u_passwd = ?, u_address = ?, u_email = ?, u_phone = ?, u_gender = ?,u_guardian = ?, u_zipcode1 = ?,u_zipcode2 = ?, u_address1 = ?, u_address2 = ?, u_auth = ? WHERE u_id = ?";
+		String sql = "UPDATE member SET u_name = ?, u_passwd = ?, u_email = ?, "
+				+ "u_phone = ?, u_gender = ?,u_guardian = ?, u_zipcode1 = ?,"
+				+ "u_zipcode2 = ?, u_address1 = ?, u_address2 = ?, u_auth = ? "
+				+ "WHERE u_id = ?";
 		PreparedStatement pstmt = null; // statement ¼±¾ð
 		int updateCount = 0;
 		try {

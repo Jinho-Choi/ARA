@@ -11,9 +11,6 @@
 <script src="js/jquery-1.10.2.mmain.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.mmain.js" type="text/javascript"></script>
 <style>
-.row {
-	padding: 20px 0px;
-}
 
 
 .contcustom {
@@ -77,7 +74,7 @@ h2 {
   
 </script>
 </head>
-<body style="background-image: url('img/login-bg.jpg'); ">
+<body style="background-image: url('img/header-bg.jpg'); ">
 	<br>
 	<br>
 	<br>
@@ -95,8 +92,8 @@ h2 {
 				<div class="container">
 					<div class="row colored">
 						<div class="contcustom">
-						<span><img src="img/logo1.jpg" style="height: 70px; width: 70px;" /></span>
-							<h2>Log-In</h2>
+						<span><img src="img/header-bg.jpg" style="height: 70px; width: 70px;" /></span>
+							<h2>로그인</h2>
 							<div>
 								<input type="text" name="id" id="id" placeholder="Enter your ID">
 								<input type="password" name="passwd" id="passwd"

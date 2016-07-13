@@ -60,7 +60,7 @@
                             </div>
                             <br>
                                 <div class="form-group">
-                                        <input type="password" name="passwd" id="passwd" class="form-control input-sm" placeholder="비밀번호">
+                                   <!-- 헤헷 -->   비밀번호</a> <input type="password" name="passwd" id="passwd" class="form-control input-sm" placeholder="비밀번호">
                                 </div>
                                 <div class="form-group">
                                         <input type="password" name="passwd" id="passwd" class="form-control input-sm" placeholder="비밀번호확인">
